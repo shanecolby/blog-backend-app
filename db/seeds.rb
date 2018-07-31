@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(name: "Peter", email: "peter@email.com", password: "password")
+User.create(name: "Test", email: "test@email.com", password: "password")
+
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 1, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 2, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 2, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
+Post.create(user_id: 2, title: Faker::Company.catch_phrase, body: Faker::Hipster.paragraph(10), image: "https://picsum.photos/200/300/?random")
