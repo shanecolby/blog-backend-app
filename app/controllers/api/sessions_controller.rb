@@ -10,8 +10,9 @@ class Api::SessionsController < ApplicationController
         "random", # the secret key
         'HS256' # the encryption algorithm
       )
-      render json: {jwt: jwt, email: user.email}, status: :created
-    else
+    #   render json: {jwt: jwt, email: user.email}, status: :created
+    # else
+    render json: { jwt: jwt, email: user.email, user_id: user.id }, status: :created
       render json: {}, status: :unauthorized
     end
   end
